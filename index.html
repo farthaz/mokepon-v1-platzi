@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOKEPON </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <section id = "choose-monster">
+        <h1 class="title"> MOKEPON </h1>
+        <h2 class="subtitle"> Choose your monster</h2>
+
+        <div id="container-cards" class = "cards">
+            
+        </div>
+
+        
+        <button id="button-monster">SELECT</button>
+        </section>
+        <section id="show-map">
+            <h2 class="subtitle"> Explore the map!</h2>
+            <canvas id="map"></canvas>
+            <button onmouseup="stopMove()" onmousedown="moveUp()">Up</button>
+            <div>
+                <button onmouseup="stopMove()" onmousedown="moveLeft()">Left</button>
+                <button onmouseup="stopMove()" onmousedown="moveDown()">Down</button>
+                <button onmouseup="stopMove()" onmousedown="moveRight()">Right</button>
+            </div>
+
+        </section>
+
+        <section id = "choose-attack">
+            <h1 class="title"> MOKEPON </h1>
+            <h2 class="subtitle"> Choose your attack</h2>
+
+            <div id = "attacksContainer" class="attack-cards">
+            </div>
+
+                <div id ="messages">
+                    <p id="result"> Win if you can </p>
+
+                    <section id ="restart">
+                        <button id="button-restart">RESTART</button>
+                    </section>
+                </div>
+
+
+            <div class="attacks">
+                <div class="attacks-player">
+                    <p id ="lives-player">0</p>
+                    <p id="monsterPlayer"> </p>
+                    <div id="player-attacks"> </div>
+                </div>
+                <div class="attacks-foe">
+                    <p id ="lives-foe">0</p>
+                    <p id="monster-foe"></p>
+                    <div id="foe-attacks"> </div>
+                </div>
+            </div>
+        </section>
+        <script src="./mokepon.js"> </script>
+    </body>
+</html>

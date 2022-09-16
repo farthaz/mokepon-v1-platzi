@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Mulish:wght@300&display=swap');
+
+body {
+    background-color: #d16bb7;
+}
+
+#choose-monster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: darkorange;
+    background-color: black;
+    font-family: 'Mulish', sans-serif;
+}
+
+.subtitle {
+    color: darkgreen;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.cards, .attack-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.card-mokepon {
+    width: 180px;
+    height: 100px;
+    background-color: brown;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-family: 'Mulish', sans-serif;
+}
+input{
+    display: none;
+}
+
+input:checked + label {
+    background-color: blue ;
+}
+.card-mokepon img {
+    width: 80px;
+}
+
+#button-monster {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid black;
+    font-family: 'DynaPuff', cursive;
+    margin-top: 20px;
+}
+
+#choose-attack {
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-attack {
+    background-color: forestgreen; 
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-family: 'DynaPuff', cursive;
+}
+
+#messages {
+    width: 280px;
+    background: red;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'DynaPuff', cursive;
+}
+
+#button-restart {
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.attacks {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    font-family: 'DynaPuff', cursive;
+}
+
+.attacks-player, .attacks-foe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#show-map {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#show-map button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid black;
+    font-family: 'DynaPuff', cursive;
+    margin: 4px 0;
+}
+
+@media (max-width: 400px) {
+    .cards, .attack-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #show-map div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
